@@ -1,0 +1,115 @@
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .body-container{
+    display: flex;
+    height: 90%;
+    width: 100%;
+  }
+  .body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 10px;
+    position: relative;
+    overflow-y: scroll;
+    width: 100%;
+  }
+  
+  .message-container{
+    display: flex;
+    
+    flex-direction: column;
+
+    margin-bottom: 14px;
+  }
+  .you:nth-child(1)
+  {
+    margin-top: 100vh;
+  }
+  .you{
+    align-items: flex-end;
+  }
+  .other
+  {
+    align-items: flex-start;
+  }
+  .message
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: aqua;
+  }
+  .messageData{
+    font-size: 13px;
+    color: rgb(36, 36, 36);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 50;
+    -webkit-box-orient: vertical;
+    max-width: 200px;
+  }
+  .meta-data
+  {
+    display: flex;
+    flex-direction: row;
+   
+    width: fit-content;
+  }
+  .name,.time{
+    margin-right: 6px;
+    text-transform: capitalize;
+    color: rgb(111, 111, 111);
+    font-size: 8px;
+  }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+  }
+  .textBox{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+.button{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    outline: none;
+    font-size: 30px;
+    background-color: transparent;
+    color: rgb(44, 73, 175);
+    border: 1px solid rgb(206, 206, 206);
+    cursor: pointer;
+}
+@media only  screen and (max-width:600px) {
+  .textBox{
+    width: 80%;
+  }
+  .button{
+    width: 20%;
+  }
+}
